@@ -1,2 +1,2 @@
-# ChemHelper
-&copy; 2017 McClellan/Giacalone
+# ChemHelper2
+&copy; 2017 Luke Giacalone and Julia McClellan
