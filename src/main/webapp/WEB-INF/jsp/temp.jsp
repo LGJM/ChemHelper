@@ -1,5 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://www.hdiv.org/jsp/jstl/core"%>
+
 <%--
   Created by IntelliJ IDEA.
   User: Luke
@@ -13,7 +14,13 @@
     <title>Test</title>
 </head>
 <body>
-<%--<c:url value="/qwer" var="url"/>--%>
-    <a href="/qwer">Click!</a>
+<h1>Test</h1>
+<%--<c:url value="/temp" var="url3"/>--%>
+<%--<a href="${url3}">sdf</a>--%>
+<form:form action="/temp" method="post" commandName="bean" id="tempForm">
+    <form:textarea path="t" type="text" id="t"/>
+    <label for="t">ENTER SOMETHING</label>
+    <form:button type="submit">SUBMIT</form:button>
+</form:form>
 </body>
 </html>
