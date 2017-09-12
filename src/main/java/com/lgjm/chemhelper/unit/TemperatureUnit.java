@@ -1,17 +1,20 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
+import com.lgjm.chemhelper.math.Operator;
 import com.lgjm.chemhelper.math.Expression;
 
-public enum VolumeUnit implements Unit {
+public enum TemperatureUnit implements Unit {
 
-    LITER("liter", "L", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
+    KELVIN("Kelvin", "K", new Expression().addStep(Operator.ADD, 273.15), new Expression().addStep(Operator.SUB, 273.15)),
+    CELSIUS("Celsius", "\u2013", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION),
+    FAHRENHEIT("Fahrenheit", "\u2109", new Expression().addStep(Operator.SUB, 32).addStep(Operator.DIV, 1.8), new Expression().addStep(Operator.MULT, 1.8).addStep(Operator.ADD, 32));
 
     private String name;
     private String symbol;
     private Expression toStandard;
     private Expression fromStandard;
 
-    VolumeUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
+    TemperatureUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
         this.name = name;
         this.symbol = symbol;
         this.toStandard = toStandard;

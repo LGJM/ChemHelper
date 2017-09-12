@@ -1,9 +1,9 @@
 package com.lgjm.chemhelper.util;
 
-import com.lgjm.chemhelper.units.Unit;
+import com.lgjm.chemhelper.unit.Unit;
 
 /**
- * A class containing handy method(s) for units.
+ * A class containing handy method(s) for unit.
  *
  * @author ChemHelper
  * @version 08/10/2017

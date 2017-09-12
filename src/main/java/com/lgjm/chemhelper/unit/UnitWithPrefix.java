@@ -1,4 +1,4 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
 /**
  * Represents a Unit with a metric prefix.

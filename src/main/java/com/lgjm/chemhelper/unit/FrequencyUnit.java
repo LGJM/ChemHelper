@@ -1,17 +1,17 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
 import com.lgjm.chemhelper.math.Expression;
 
-public enum AmountUnit implements Unit {
+public enum FrequencyUnit implements Unit {
 
-    MOLE("mole", "mol", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
+    HERTZ("hertz", "Hz", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
 
     private String name;
     private String symbol;
     private Expression toStandard;
     private Expression fromStandard;
 
-    AmountUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
+    FrequencyUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
         this.name = name;
         this.symbol = symbol;
         this.toStandard = toStandard;

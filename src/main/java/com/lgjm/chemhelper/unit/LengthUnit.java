@@ -1,17 +1,17 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
 import com.lgjm.chemhelper.math.Expression;
 
-public enum MassUnit implements Unit {
+public enum LengthUnit implements Unit {
 
-    GRAM("gram", "g", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
+    METER("meter", "m", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
 
     private String name;
     private String symbol;
     private Expression toStandard;
     private Expression fromStandard;
 
-    MassUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
+    LengthUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
         this.name = name;
         this.symbol = symbol;
         this.toStandard = toStandard;

@@ -1,17 +1,17 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
 import com.lgjm.chemhelper.math.Expression;
 
-public enum FrequencyUnit implements Unit {
+public enum RatioUnit implements Unit {
 
-    HERTZ("hertz", "Hz", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
+    PERCENT("percent", "%", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
 
     private String name;
     private String symbol;
     private Expression toStandard;
     private Expression fromStandard;
 
-    FrequencyUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
+    RatioUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
         this.name = name;
         this.symbol = symbol;
         this.toStandard = toStandard;

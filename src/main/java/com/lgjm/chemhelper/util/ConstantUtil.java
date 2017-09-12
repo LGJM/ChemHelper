@@ -1,7 +1,7 @@
 package com.lgjm.chemhelper.util;
 
 import com.lgjm.chemhelper.math.Operator;
-import com.lgjm.chemhelper.units.*;
+import com.lgjm.chemhelper.unit.*;
 
 /**
  * Represents constants

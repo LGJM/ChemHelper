@@ -1,11 +1,11 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
 import com.lgjm.chemhelper.math.Operator;
 
 import java.util.LinkedList;
 
 /**
- * Represents a Unit composed of multiple units
+ * Represents a Unit composed of multiple unit
  *
  * @author ChemHelper
  * @version 08/11/2017

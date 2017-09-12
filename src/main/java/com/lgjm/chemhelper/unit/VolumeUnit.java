@@ -1,20 +1,17 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
-import com.lgjm.chemhelper.math.Operator;
 import com.lgjm.chemhelper.math.Expression;
 
-public enum PressureUnit implements Unit {
+public enum VolumeUnit implements Unit {
 
-    ATMOSPHERES("atmospheres", "atm", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION),
-    TORR("torr", "Torr", new Expression().addStep(Operator.MULT, 0.00131579), new Expression().addStep(Operator.DIV, 0.00131579)),
-    PASCAL("pascal", "Pa", new Expression().addStep(Operator.MULT, 0.00000986923267), new Expression().addStep(Operator.DIV, 0.00000986923267));
+    LITER("liter", "L", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
 
     private String name;
     private String symbol;
     private Expression toStandard;
     private Expression fromStandard;
 
-    PressureUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
+    VolumeUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
         this.name = name;
         this.symbol = symbol;
         this.toStandard = toStandard;

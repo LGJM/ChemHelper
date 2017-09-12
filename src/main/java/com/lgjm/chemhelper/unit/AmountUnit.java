@@ -1,20 +1,17 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
-import com.lgjm.chemhelper.math.Operator;
 import com.lgjm.chemhelper.math.Expression;
 
-public enum TimeUnit implements Unit {
+public enum AmountUnit implements Unit {
 
-    SECOND("second", "s", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION),
-    MINUTE("minute", "min", new Expression().addStep(Operator.MULT, 60), new Expression().addStep(Operator.DIV, 60)),
-    HOUR("hour", "hr", new Expression().addStep(Operator.MULT, 3600), new Expression().addStep(Operator.DIV, 3600));
+    MOLE("mole", "mol", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
 
     private String name;
     private String symbol;
     private Expression toStandard;
     private Expression fromStandard;
 
-    TimeUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
+    AmountUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
         this.name = name;
         this.symbol = symbol;
         this.toStandard = toStandard;

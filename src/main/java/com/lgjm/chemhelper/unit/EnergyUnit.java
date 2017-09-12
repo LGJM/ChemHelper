@@ -1,17 +1,17 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
 import com.lgjm.chemhelper.math.Expression;
 
-public enum LengthUnit implements Unit {
+public enum EnergyUnit implements Unit {
 
-    METER("meter", "m", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
+    JOULE("joule", "J", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION);
 
     private String name;
     private String symbol;
     private Expression toStandard;
     private Expression fromStandard;
 
-    LengthUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
+    EnergyUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
         this.name = name;
         this.symbol = symbol;
         this.toStandard = toStandard;

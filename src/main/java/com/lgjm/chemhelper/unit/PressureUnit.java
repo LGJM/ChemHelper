@@ -1,20 +1,20 @@
-package com.lgjm.chemhelper.units;
+package com.lgjm.chemhelper.unit;
 
 import com.lgjm.chemhelper.math.Operator;
 import com.lgjm.chemhelper.math.Expression;
 
-public enum TemperatureUnit implements Unit {
+public enum PressureUnit implements Unit {
 
-    KELVIN("Kelvin", "K", new Expression().addStep(Operator.ADD, 273.15), new Expression().addStep(Operator.SUB, 273.15)),
-    CELSIUS("Celsius", "\u2013", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION),
-    FAHRENHEIT("Fahrenheit", "\u2109", new Expression().addStep(Operator.SUB, 32).addStep(Operator.DIV, 1.8), new Expression().addStep(Operator.MULT, 1.8).addStep(Operator.ADD, 32));
+    ATMOSPHERES("atmospheres", "atm", Expression.NO_EXPRESSION, Expression.NO_EXPRESSION),
+    TORR("torr", "Torr", new Expression().addStep(Operator.MULT, 0.00131579), new Expression().addStep(Operator.DIV, 0.00131579)),
+    PASCAL("pascal", "Pa", new Expression().addStep(Operator.MULT, 0.00000986923267), new Expression().addStep(Operator.DIV, 0.00000986923267));
 
     private String name;
     private String symbol;
     private Expression toStandard;
     private Expression fromStandard;
 
-    TemperatureUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
+    PressureUnit(String name, String symbol, Expression toStandard, Expression fromStandard) {
         this.name = name;
         this.symbol = symbol;
         this.toStandard = toStandard;
