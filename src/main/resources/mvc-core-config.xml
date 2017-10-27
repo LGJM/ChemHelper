@@ -23,6 +23,9 @@
         <property name="maxUploadSize" value="100000" />
     </bean>
 
+    <!-- Set resources directory -->
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
     <!-- View Resolver -->
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
         <property name="contentNegotiationManager" ref="cnManager"/>

@@ -1,0 +1,4 @@
+/* Navbar Font Color */
+nav div.nav-wrapper > ul:not(.dropdown-content) > li > a {
+    color: #607d8b !important;
+}

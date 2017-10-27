@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/WEB-INF/jsp">
+    <decorator name="theme" page="common/theme.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>
